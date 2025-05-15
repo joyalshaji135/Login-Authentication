@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/images/register.svg" type="image/x-icon">
+
+    <!-- Additional Meta Tags -->
+    <meta name="description" content="Login to your account to access the dashboard.">
+    <meta name="keywords" content="login, user login, sign in, dashboard">
+    <meta name="author" content="NeptunE">
+    <!-- Additional Meta Tags for Minnu -->
+    <meta name="author" content="Minnu">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@minnukota381">
+    <meta property="og:title" content="Login">
+    <meta property="og:description" content="Login to your account to access the dashboard.">
+    <meta property="og:image" content="/images/user.svg">
+    
+  <!-- Additional Meta Tags -->
+  <meta name="description" content="Login to your account to access the dashboard.">
+  <meta name="keywords" content="login, user login, sign in, dashboard">
+  <meta name="author" content="NeptunE">
+  <link rel="stylesheet" href="/css/register.css"/>
+</head>
+<body>
+  <div class="register-container">
+    <form class="form" action="/register" method="POST">
+      <h1 class="title">Register</h1>
+      <p class="message">Sign up now and get full access to our app.</p>
+      
+      <div class="flex">
+        <label>
+          <input class="input" type="text" name="firstName" placeholder=" " required>
+          <span>First Name</span>
+        </label>
+        
+        <label>
+          <input class="input" type="text" name="lastName" placeholder=" " required>
+          <span>Last Name</span>
+        </label>
+      </div>
+
+      <label>
+        <input class="input" type="text" name="username" placeholder=" " required>
+        <span>Username</span>
+      </label>
+
+      <label>
+        <input class="input" type="password" name="password" placeholder=" " required>
+        <span>Password</span>
+      </label>
+
+      <label>
+        <input class="input" type="password" name="confirmPassword" placeholder=" " required>
+        <span>Confirm Password</span>
+      </label>
+
+      <label>
+        <select class="input" name="gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </label>
+
+      <label>
+        <input class="input" type="email" name="email" placeholder=" " required>
+        <span>Email</span>
+      </label>
+
+      <button class="submit" type="submit">Register</button>
+      <p class="signin">Already have an account? <a href="/login">Sign in</a></p>
+    </form>
+  </div>
+</body>
+</html>

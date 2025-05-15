@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/images/user.svg" type="image/x-icon">
+  
+  <!-- Additional Meta Tags -->
+  <meta name="description" content="Login to your account to access the dashboard.">
+  <meta name="keywords" content="login, user login, sign in, dashboard">
+  <meta name="author" content="NeptunE">
+  <!-- Additional Meta Tags for Minnu -->
+  <meta name="author" content="Minnu">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@minnukota381">
+  <meta property="og:title" content="LoginAu | NeptunE">
+  <meta property="og:description" content="Login to your account to access the dashboard.">
+  <meta property="og:image" content="/images/user.png">
+  <meta property="og:url" content="https://loginau-xej1.onrender.com/">
+  <meta property="og:type" content="website">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <form class="login-form" action="/login" method="POST">
+      <h1 class="heading">Welcome back</h1>
+      <p class="paragraph">Please enter your details to sign in</p>
+      <div class="input-group">
+        <input
+          required
+          placeholder="Email or username"
+          name="username"
+          id="username"
+          type="text"
+        />
+      </div>
+      <div class="input-group">
+        <input
+          required
+          placeholder="Password"
+          name="password"
+          id="password"
+          type="password"
+        />
+      </div>
+      <button type="submit">Sign In</button>
+      <div class="bottom-text">
+        <p>Don't have an account? <a href="/register">Sign up</a></p>
+        <p><a href="/forgot-password">Forgot password?</a></p>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
